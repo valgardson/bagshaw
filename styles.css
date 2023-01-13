@@ -25,6 +25,8 @@ body {
   padding: 2rem 2rem;
   background: #FCFBFC;
   color: #212937;
+  max-width: 65rem;
+  margin: auto;
 }
 
 a {
