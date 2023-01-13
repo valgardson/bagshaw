@@ -26,6 +26,12 @@ body {
   background: #FCFBFC;
   color: #212937;
 }
+
+a {
+  text-decoration: none;
+  color: #212937; 
+}
+
 .content {
   display: flex;
 
