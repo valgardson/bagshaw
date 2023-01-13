@@ -1,0 +1,130 @@
+/* 
+primary-text: #212937;
+secondary-text: #535761;
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  /* color-scheme: dark light; */
+}
+
+body {
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  padding: 2rem 2rem;
+  background: #FCFBFC;
+  color: #212937;
+}
+.content {
+  display: flex;
+
+  gap: 2rem;
+  /* border: red; */
+}
+
+.left-div {
+  min-width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
+}
+.contact-info {
+  margin-top: 1rem;
+}
+
+.right-div  {
+  margin-top: 5rem;
+  /* background-color: red; */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.person {
+  position: relative;
+  max-width: 14rem;
+  /* margin-inline: auto; */
+}
+
+.person__container {
+  /* background: pink; */
+  aspect-ratio: 1 / 1.25;
+  display: grid;
+  align-items: end;
+  border-radius: 0 0 100vw 100vw;
+  overflow: hidden;
+
+  transition: transform 350ms ease;
+}
+
+.person__container:hover {
+  transform: scale(1.1);
+}
+
+.person__circle {
+  position: absolute;
+  inset: auto 0 0;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
+  margin-inline: auto;
+  
+}
+
+.person__img {
+  position: relative;
+  left: 1.25rem;
+  bottom: -4rem;
+  z-index: 2;
+  max-width: 12rem;
+  transform: scale(1.1);
+
+  transition: transform 500ms ease;
+}
+
+.person__container:hover .person__img {
+  transform: 
+    scale(1.25);
+    translate:(-2.75rem);
+}
+
+h1 {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  color:#212937;
+}
+
+#secondary-text {
+  font-size: 1.2rem;
+  color: #535761;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.description-box {
+  padding: 1rem;
+  background: #fff;
+  border-radius: .25rem;
+  box-shadow: 2px 2px 10px rgb(218, 218, 218);
+  margin-bottom: 1.5rem;
+}
+
+
